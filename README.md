@@ -1,7 +1,9 @@
 # Salve!
-Estou no processo de aprendizagem de HTML e CSS para a competência "Programar Web Frontend"
-da universidade Unifacisa, em Campina Grande na Paraíba. E resolvi documentar toda minha
-experiência e progresso para registros futuros aqui esperando ser útil para alguém.
+
+Me chamo Pedro Henrique e estou no processo de aprendizagem de HTML e CSS para a
+competência "Programar Web Frontend" da universidade Unifacisa, em Campina Grande
+na Paraíba. E resolvi documentar toda minha experiência e progresso para registros
+futuros aqui esperando ser útil para alguém.
 
 ## Tecnologias Usadas
     - HTML5
