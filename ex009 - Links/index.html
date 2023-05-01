@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav/Cornmanthe3rd-Plex-Other-html-5.ico" type="image/x-icon">
+    <title>Links e Âncoras</title>
+</head>
+
+<body>
+    <h1>Links e Âncoras</h1>
+    <hr>
+    
+    <h2>Utilizando links externos</h2>
+    <p>Você pode acessar meu repositório no github <a href="https://github.com/pedrohpdo">clicando aqui</a></p>
+
+    <p>
+        ps: Esse link acima, do jeito que está configurado, pode abri um precedente para <br>
+        que seu usuário jamais volte a sua página inicial, já que, ao acessar o link a página <br>
+        atual é sobreposta. Para solucionar isso, podemos adicionar duas propriedades a tag <br>
+        de links. As propriedas target = blank e rel = external.
+    </p>
+    <p>
+        Traduzindo:
+        <dt>Target Blank</dt>
+        <dd>Propriedade que indica que, o alvo desse meu link será uma nova janela em branco.</dd>
+
+        <dt>Rel External</dt>
+        <dd>Estou inferindo que o link em questão vai para um lugar fora do meu site</dd>
+    </p>
+
+    <p>Utilizando agora, você pode ver que a página será aberta em uma nova guia do navegador</p>
+    <p>Você também pode acessar meu instagram, <a href="https://instagram.com/ppedropereiraa" target="_blank" rel="external" >clique aqui!</a></p>
+
+    <hr>
+    <!------------------->
+    <h2>Utilizando Links Internos</h2>
+    <hr>
+    <p>
+        Ele vai fazer relação a páginas que estão dentro do nosso próprio servidor, ou seja <br>
+        dentro do nosso próprio site.
+    </p>
+
+    <h3>Exemplo</h3>
+    <p>
+        No primeiro exemplo, é preciso que a página esteja dentro da mesma pasta do arquivo index.html <br>
+        Caso tudo esteja certo, acesse a segunda página <a href="pag002.html" rel="next" target="_self">aqui</a>  <!--rel next indica que essa página é a próxima da navegação-->
+    </p>
+    <hr>
+    <h2>Acessando páginas dentro de uma página</h2>
+    <p>
+        Para acessar a TERCEIRA página do Site, clique <a href="noticias/pag003.html" rel="next" target="_self">aqui</a>
+    </p>
+    <hr>
+
+    <h2>Links para Download</h2>
+    <p>
+        Agora vamo humildemente entender links para downloads. Arrocha.
+    </p>
+    <h3>Criando link para download de PDF's</h3>
+    <p>
+        Existem particularidades para determinados navegadores, mas geralmente podemos <br>
+        inferir o download de arquivos em links com a mesma tag de links, mas referenciando <br>
+        o arquivo em questão (o mesmo deve estar dentro da sua pasta). Caso não funciona, <br>
+        também é possível adicionar duas novas propriedades dentro da tag, a download = nomeDoArquivo<br>
+        e o type = tipoDeMediaDoArquivo. <br>
+    </p>
+    <p>
+        Com relação a propriedade type, existem uma séria de media types para determinado tipo <br>
+        de arquivo e vc pode acessa-las <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" rel="external" target="_blank"><strong>aqui</strong>
+    </p>
+    <ul>
+        <li><a href="download/Read Me.pdf" download="Read me.pdf" type="application/pdf">Download do PDF do livro</a></li>
+        <li><a href="download/Read Me.zip" download="Read me.zip" type="application/zip">Download do PDF .zip</a></li>
+    </ul>
+    <hr>
+</body>
+
+</html>
