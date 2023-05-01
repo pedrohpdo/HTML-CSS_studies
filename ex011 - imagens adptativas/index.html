@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../fav/favicon.ico" type="image/x-icon">
+    <title>Imagens Adptativas</title>
+</head>
+<body>
+    <h1>Trabalhando com Imagens Adptativas</h1>
+    <hr>
+    <p>
+        Para isso, vamos utilizar a tag &lt;picture&gt;, onde ela infere que uma imagem será <br>
+        inserida, mas com algumas propriedes, como a souce-media-type
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/Prancheta1.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/Prancheta2.png" type="image/png">
+        <img src="imgs/Prancheta3.png" alt="Img flex">
+    </picture>
+    <p>
+        ps: Usando o source, setamos na propriedade media o tamanho máximo de tela em questão. Ou seja,<br>
+        caso o tamanho da tela atual seja de, no máximo 1050px (Ou menor que 1050 px), a imagem Prancheta2 <br>
+        deve ser mostrada.
+        <br>
+        Caso o tamanho da tela atual seja de, no máximo 750px (ou menor que 750), utilizamos a imagem Prancheta1 <br>
+        deve ser mostrada no lugar.
+        <br>
+        Existem 50px excedentes no max-width que foram colocando para evitar que a barra de rolagem lateral esteja <br>
+        habilitada, mesmo sendo desnecessário pelo tamanho da imagem.
+    </p>
+    <hr>
+    <h2>Cuidado: Invertendo os Sources</h2>
+    <p>
+        Os sources devem estar em ordem de tamanho, caso contrário o script não vai conseguir mostrar as fotos com <br>
+        a devida responsividade.
+    </p>
+
+</body>
+</html>
