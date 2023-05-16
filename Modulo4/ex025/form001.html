@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="text-presentation">
+            <div class="presentation-title">
+                <h1>
+                    Meu <br>
+                    Primeiro <br>
+                    Formulário
+                </h1>
+            </div>
+
+            <div class="resume-text">
+                <p>
+                    Em resumo, todo formulário tem que estar dentro de uma chave &lt;form&gt;, e dentro dessa
+                    tag, inserimos a tag &lt;input&gt; com a propriedade text, para definirmos apenas os campos de
+                    digitação e seus respectivos nomes. <strong>Mas</strong>, esses campos, com esse script implementado
+                    não possui nenhuma relação com seus nomes, e também não estão sendo enviados para lugar nenhum.
+                </p>
+                <br>
+                <p>
+                    E ao final, utilizamos a mesma tag &lt;input&gt;, mas com o atributo text = "submit", para gerar um
+                    botão para enviar esse formulário.
+                </p>
+            </div>
+        </div>
+    
+        <div class="form">
+            
+            <div class="input-header">
+                <h1>Cadastre-se</h1>
+            </div>
+
+            <div>
+                <form class="input-group">
+    
+                    <div class="input-box">
+                        <label for="inome">Nome:</label> 
+                        <input type="text" name="nome" id="inome" value="Digite seu nome" required>
+                    </div>
+            
+                    <div class="input-box">
+                        <label for="isobrenome">Sobrenome:</label>
+                            <input type="text" name="sobrenome" id="isobrenome" value="Digite seu Sobrenome" required>
+                    </div>  
+    
+                    <div class="input-box">
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail" value="Digite seu Email" required>
+                    </div>
+                        
+                    <div class="buttom-submit">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+    
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

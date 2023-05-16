@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../fav/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Inserindo Vídeos com HTML</title>
+</head>
+<body>
+    <h1> Inserindo Vídeos com HTML</h1>
+    <hr>
+    <h2>
+        Inserindo vídeos com HTML Hospedados localmente
+    </h2>
+    <p>
+        <em>Dica: hospedar vídeos em diferentes formatos são interessantes para diversos navegadores diferentes</em> <br>
+        E sim, a ordem colacada na tag &lt;video&gt; tem importância, pois indica a ordem dos arquivos que o navegador <br>
+        vai carregar o vídeo
+    </p>
+
+    <video class = "videotest" controls loop>
+        <source src="videos/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível</p>
+    </video>
+    <p>
+        Alguns atributos interessantes:
+        <ul>
+            <li>
+                <dt>controls</dt>
+                <dd>Habilitam os controles do vídeo que foi hospedado</dd>
+            </li>
+
+            <li>
+                <dt>autoplay</dt>
+                <dd>Reproduz o vídeo assim que ele é carregado na página</dd>
+            </li>
+
+            <li>
+                <dt>loop</dt>
+                <dd>Reproduz o vídeo novamente depois que ele é finalizado</dd>
+            </li>
+
+        </ul>
+    </p>
+    <hr>
+    <p>
+        Obs: Vídeos hospedados dentro do seu próprio site podem gerar custos absurdos de banda larga para <br>
+        para você ou seu cliente. Evite essa loucura
+    </p>
+    <h2>
+        Inserido vídeos usando HTML  do Youtube
+    </h2>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>
+        <em>O script inteiro utilizado no vídeo foi gerado pelo youtube, na aba de <strong>compartilhar</strong> algum vídeo</em>
+    </p>
+
+
+</body>
+</html>
